@@ -15,7 +15,7 @@ html {
 header {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 70px;
     color: white;
     background-color: #02506f;
     position: static;
@@ -42,6 +42,17 @@ header {
     list-style-type: none;
 }
 
+li {
+    margin: 0px 10px 0px 0px;
+    font-family: cursive;
+    font-size: 20px 
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
 content {
     display: flex;
     flex-direction: row;
@@ -49,11 +60,15 @@ content {
 }
 
 #nav-bar {
-    width: auto%;
+    width: 20%;
 }
 
 #content {
     width: 80%;
+}
+
+h1 {
+    text-align: center;
 }
 
 img {
@@ -61,4 +76,26 @@ img {
     height: auto;
 }
 
+#img-wrap {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
 
+#image {
+    float: left;
+}
+
+#text p {
+    text-align: justify;
+    margin: 10px;
+}
+
+#footnote p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.cit {
+    color: black;
+    text-decoration: none;  
+}
