@@ -1,0 +1,52 @@
+<!DOCTYPY html>
+<html>
+    <head>
+        <title>Online Lab Tools</title>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/xlsx.css"/>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div id="head-nav">
+                    <ul id="head-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Tools</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="log-nav">
+                    <ul id="log-menu">
+                        <li><a href="">login</a></li>
+                        <li><a href="">register</a></li>
+                    </ul>
+                </div>
+            </header>
+            <content>
+                <div id="nav-bar">
+                    <form name="xlsx">
+                        <div id="my_label">
+                            <label for=select-files>Select Files</label>
+                            <input type="file" multiple id="select-files" accept=".xlsx"/>
+                        </div>
+                            <button id="button">Execute</button>
+                    </form>
+                </div>
+                <div id="content" name="content">
+                    <h1>Online Lab Tools</h1>
+                    <h2>xlsx tool</h2>
+                    <div id="testando"></div>
+                </div>
+            </content>
+        </div>
+        <script>
+          const fileSelector = document.getElementById('select-files');
+          fileSelector.addEventListener('change', (event) => {
+            const fileList = event.target.files;
+            let test = document.getElementById('testando');
+              test.innerHTML = ${fileList};
+            console.log(fileList);
+          });
+        </script>
+    </body>
+</html>

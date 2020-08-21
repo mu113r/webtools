@@ -1,0 +1,45 @@
+h2 {
+    text-align: center;
+}
+
+#nav-bar {
+    margin-top: auto;
+    align-content: center;
+    display: flex;
+}
+
+#select-files {
+    display: none;
+    margin-top:200px;
+}
+
+label {
+    border-radius: 10px;
+    background: #e8f3fc;
+    border-style: none;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+label:hover {
+    background: #02506f;
+    color: white;
+}
+
+#button {
+    border-radius: 10px;
+    background: #e8f3fc;
+    border-style: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#button:hover {
+    background: #02506f;
+    color: white;
+}
